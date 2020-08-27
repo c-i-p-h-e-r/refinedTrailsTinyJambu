@@ -1,0 +1,56 @@
+Instances of conforming state pairs:
+
+**Note the trails/states are printed as C arrays. So word order is reversed to one given in paper.
+
+===================================
+Rounds = 384
+
+Target Differential Trail
+00000000 00000092 20010000 80000000 
+00000004 00004080 20001000 81020000 
+
+Input States
+2e807bed 056b5933 63b295ba 7a56aeff 
+2e807bed 056b59a1 43b395ba fa56aeff 
+
+Output States
+2a79339c 50be1c33 3205400c 52c65e58 
+2a793398 50be5cb3 1205500c d3c45e58 
+
+===================================
+Rounds = 320
+
+Target Differential Trail
+00000000 00000000 00000000 04000000 
+81000012 24000000 90004000 00010204 
+
+Input States
+5a7f2096 5c2d908a 7bd79f22 31c149c2 
+5a7f2096 5c2d908a 7bd79f22 35c149c2 
+
+Output States
+eda070b4 1537b78e e2942c64 f2dc3f06 
+6ca070a6 3137b78e 72946c64 f2dd3d02 
+
+===================================
+Rounds = 256
+
+Target Differential Trail
+00000000 00000000 00000000 80000000 
+04080000 01000002 20000240 80040010 
+
+Input States
+0fa2d344 5c7a798d 15907abe 14aa5aa8 
+0fa2d344 5c7a798d 15907abe 94aa5aa8 
+
+Output States
+b71334cf c8182c29 1ac41f19 f49fd381 
+b31b34cf c9182c2b 3ac41d59 749bd391 
+
+
+
+
+
+
+
+

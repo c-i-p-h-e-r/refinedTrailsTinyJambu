@@ -1,0 +1,40 @@
+Following trails are verified:
+**Note the trails are printed as C arrays. So word order is reversed to one given in paper.
+
+Type-4 Trail for 384 rounds (Ref Table 9)
+input difference  = {0x00000000, 0x00000092, 0x20010000, 0x80000000};
+output difference = {0x00000004, 0x00004080, 0x20001000, 0x81020000};
+
+Type-1 Trail for 256 rounds (Refer Table 11)
+input difference  = {0x00000000, 0x00000000, 0x00000000, 0x80000000};
+output difference = {0x04080000, 0x01000002, 0x20000240, 0x80040010};
+
+Type-1 Trail for 320 rounds (Refer Table 11)
+input difference  = {0x00000000, 0x00000000, 0x00000000, 0x04000000};
+output difference = {0x81000012, 0x24000000, 0x90004000, 0x00010204};
+
+Compilation:
+gcc pairsearch.c -lm -o pairsearch
+
+Execution:
+./pairsearch <#rounds>
+
+Example:
+./pairsearch 384
+
+Sample Output:
+Conforming Pair Search:
+
+Target Differential Trail
+00000000 00000092 20010000 80000000 
+00000004 00004080 20001000 81020000 
+
+Input States
+799040f3 2198122d 1cb01d1b 55860381 
+799040f3 219812bf 3cb11d1b d5860381 
+
+Output States
+5484a007 13a4507f b0d9dc54 29ffcb6a 
+5484a003 13a410ff 90d9cc54 a8fdcb6a
+
+Done
